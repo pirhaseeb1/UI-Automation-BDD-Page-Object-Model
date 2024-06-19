@@ -1,0 +1,29 @@
+image: ccnoc/devops-ci:cc-docker
+services:
+  - docker:dind
+variables:
+  ENV: $ENV
+  COMMAND: $COMMAND
+  TAG: $TAG
+  APPENV: "DEV"
+  ECRREPO: "549662986508.dkr.ecr.us-east-1.amazonaws.com"
+  GIT_DEPTH: 0 # Tells git to fetch all the branches of the project, required by the analysis task
+stages:
+  - Test-automation
+UIAutomation:
+  when: manual
+  stage: Test-automation
+  image: gitlab.foxtons-cloud.link:5050/qaautomation/uiautomation:fx-maven-base
+  
+  before_script:
+    - apt-get update && apt-get install -y rsync && apt-get install openssh-client -y
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -
+    - ssh -o StrictHostKeychecking=no -i /root/foxtons-QA-keypair.pem ubuntu@10.81.8.240
+  script:
+    - cat $aws_config > /root/.aws/config && cat $Aws_credentials > /root/.aws/credentials
+    - mvn clean test -Denv=$ENV -Dcucumber.filter.tags=$TAG
+    - nohup mvn allure:serve &
+    - sleep 150
+    - dir=$(find /tmp -type d -name "allure-report")
+    - rsync -atv --delete --progress $dir ubuntu@10.81.8.240:/var/www/html/qa-testing/report-$(date +"%Y-%m-%d_%H-%M-%S")

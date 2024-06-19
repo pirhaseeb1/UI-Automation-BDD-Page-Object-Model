@@ -1,0 +1,186 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "As an anonymous user I should be able to access Sell Conveyancing Page",
+    "line": 1,
+    "id": "as-an-anonymous-user-i-should-be-able-to-access-sell-conveyancing-page",
+    "tags": [],
+    "uri": "tests\\features\\sellConveyancing.feature",
+    "elements": [
+      {
+        "id": "as-an-anonymous-user-i-should-be-able-to-access-sell-conveyancing-page;user-should-be-able-to-see-a-hero-image-with-text-on-top-of-it-indicating-that-user-is-on-the-“conveyancing”-page-with-a-subtext-“be-sale-ready-solicitors-hand-picked-for-their-expertise,-speed-&-efficiency”",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "User should be able to see a hero image with text on top of it indicating that user is on the “Conveyancing” page with a subtext “Be sale ready Solicitors hand-picked for their expertise, speed & efficiency”",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3902000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User on Conveyancing Page",
+            "match": {
+              "location": "tests\\features\\support\\sellConveyancingSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "conveyancing card should have expected title and subtitles",
+            "match": {
+              "location": "tests\\features\\support\\sellConveyancingSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-an-anonymous-user-i-should-be-able-to-access-sell-conveyancing-page;user-should-be-able-to-see-a-marketing-fold-with-a-text-on-top-of-it-“london's-conveyancing-experts“-and-some-subtext-explaining-the-features-and-benefits-of-using-the-solicitor-services-of-conveyan",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "User should be able to see a marketing fold with a text on top of it “London's conveyancing experts“ and some subtext explaining the features and benefits of using the solicitor services of Conveyan",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "User on Conveyancing Page",
+            "match": {
+              "location": "tests\\features\\support\\sellConveyancingSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 960000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "marketing fold card should have expected title subtitles and bullet points",
+            "match": {
+              "location": "tests\\features\\support\\sellConveyancingSteps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1522000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-an-anonymous-user-i-should-be-able-to-access-sell-conveyancing-page;user-should-be-able-to-see-a-fold-with-title:-“why-use-conveyan“",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "User should be able to see a fold with Title: “Why use Conveyan“",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "User on Conveyancing Page",
+            "match": {
+              "location": "tests\\features\\support\\sellConveyancingSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "user see all the benefits and features of Conveyan services in a list format",
+            "match": {
+              "location": "tests\\features\\support\\sellConveyancingSteps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1578000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "tests\\features\\support\\hooks.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
